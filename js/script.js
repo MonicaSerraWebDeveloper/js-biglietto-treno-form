@@ -25,9 +25,18 @@ buttonCalculatorTicket.addEventListener('click', function () {
     const discountTwenty = regularPrice - (regularPrice * 20 / 100);
     // Creiamo lo sconto 40% 
     const discountForty = regularPrice - (regularPrice * 40 / 100);
-    console.log(discountForty);
+
+    // Creiamo la condizione per gli under 18 e gli over 65
+
+    let discountUser = regularPrice;
+
+    if (userAge < 18) {
+        discountUser = discountTwenty
+    } else if (userAge >= 65) {
+        discountUser = discountForty
+    }
+    console.log(discountUser)
 
 });
     
-    // Creiamo la condizione per gli under 18 e gli over 65
     // Stampiamo il risultato finale 
