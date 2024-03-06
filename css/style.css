@@ -49,6 +49,9 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .row {
@@ -113,6 +116,10 @@ button:hover {
 /*--------------------
         TICKET 
 ----------------------*/
+
+.ticket-result-container {
+    display: none;
+}
 
 .col {
     width: calc(100% / 4);
