@@ -25,8 +25,7 @@ buttonCalculatorTicket.addEventListener('click', function () {  // Creiamo l'eve
     }
 
     const roundedPrice = parseFloat(totalPrice.toFixed(2)); // Arrotondiamo i decimali ad un massimo di due cifre
-    console.log(roundedPrice);
 
-    document.querySelector('.message-for-user').innerHTML = `Il prezzo del tuo biglietto è: ${roundedPrice}`  // Stampiamo il risultato finale 
+    document.querySelector('.message-for-user').innerHTML = `Il prezzo del tuo biglietto è: € ${roundedPrice}`  // Stampiamo il risultato finale 
 });
     

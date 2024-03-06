@@ -9,10 +9,133 @@
 }
 
 /*--------------------
-        DEBUG
+        GENERAL
 ----------------------*/
-/* 
-.form-container {
-    border: 2px solid red;
-} */
 
+body {
+    background-color: #123a53;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.padding-bottom {
+    padding-bottom: 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+/*--------------------
+        TYPOGRAPHY
+----------------------*/
+
+h2 {
+    text-align: center;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*--------------------
+        MAIN
+----------------------*/
+
+main {
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #c1873b;
+    padding: 30px 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.input-container label {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------
+        INPUT
+----------------------*/
+
+input {
+    padding: 8px 14px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #fff;
+    border-radius: 0;
+    outline: none;
+}
+
+/*--------------------
+        BUTTON
+----------------------*/
+
+button {
+    padding: 8px 20px;
+    border-radius: 0;
+    border: 1px solid #c1873b;
+    background-color: #c1873b;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+}
+
+/*--------------------
+        TICKET 
+----------------------*/
+
+.col {
+    width: calc(100% / 4);
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    width: 70%;
+}
+
+.biglietto-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 30px;
+    background-color: #fff;
+    color: #444;
+}
+
+.biglietto-container > * {
+    padding-left: 10px;
+    border-left: 2px solid #444;
+}
