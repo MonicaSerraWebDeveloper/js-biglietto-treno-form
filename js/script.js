@@ -39,6 +39,7 @@ buttonCalculatorTicket.addEventListener('click', function () {  // Creiamo l'eve
     document.querySelector('.message-for-user').innerHTML = `€ ${roundedPrice}`  // Stampiamo il risultato finale 
 });
 
+
 // Milestone 2
 
 buttonCalculatorTicket.addEventListener('click', function () { // Creare una variabile per il nome inserito in input
@@ -49,6 +50,17 @@ buttonCalculatorTicket.addEventListener('click', function () { // Creare una var
     containerTicketResult.style.display = 'block'
 });
 
+const resetButton = document.querySelector('.reset');
+
+resetButton.addEventListener('click', function () { // Pulsante di reset che torna alla situazione iniziale
+    document.querySelector('#trip-distance').value = '';
+    document.querySelector('#user-age').value = '';
+    document.querySelector('#user-name').value = '';
+
+    const containerTicketResult = document.querySelector('.ticket-result-container');
+    containerTicketResult.style.display = 'none';
+
+});
 
 
 
