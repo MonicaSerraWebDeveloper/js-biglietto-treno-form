@@ -17,11 +17,17 @@ buttonCalculatorTicket.addEventListener('click', function () {
     // Creiamo il calcolo matematico tra la variabile Km e il numero 0.21
     const regularPrice = userKm * numberForCalculation;
 
+
+    // Creiamo la variabile per l'input Age
+    const userAge = parseInt (document.querySelector('#user-age').value);
+
+    // Creiamo lo sconto 20%
+    const discountTwenty = regularPrice - (regularPrice * 20 / 100);
+    // Creiamo lo sconto 40% 
+    const discountForty = regularPrice - (regularPrice * 40 / 100);
+    console.log(discountForty);
+
 });
     
-    // Creiamo il calcolo matematico tra la variabile Km e il numero 0.21
-    // Creiamo la variabile per l'input Age
-    // Creiamo lo sconto 20%
-    // Creiamo lo sconto 40% 
     // Creiamo la condizione per gli under 18 e gli over 65
     // Stampiamo il risultato finale 
